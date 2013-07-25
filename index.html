@@ -14,6 +14,7 @@
 
       function deviceReady() {
         $('#loginForm').on('submit', function(e) {
+          e.preventDefault();
           $('#submitButton').attr('disabled','disabled');
           user = $('#username').val();
           pwd = $('#password').val();
@@ -22,6 +23,7 @@
               alert(res);
             });
           }
+          $('#submitButton').removeAttr('disabled');
           return false;
         });
       }

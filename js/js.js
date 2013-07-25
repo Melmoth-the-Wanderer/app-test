@@ -4,6 +4,8 @@ function init() {
 }
 
 function deviceReady() {
+  navigator.notification.alert('ALERT', function() {});
+/*
   $('#loginForm').on('submit', function(e) {
     $('#submitButton',this).attr('disabled','disabled');
     var user = $('#username',this).val();
@@ -15,4 +17,5 @@ function deviceReady() {
     }
     return false;
   });
+*/
 }

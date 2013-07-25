@@ -14,15 +14,9 @@
       function deviceReady() {
         $('#loginForm').on('submit', function(e) {
           e.preventDefault();
-          $('#submitButton').attr('disabled','disabled');
-          user = $('#username').val();
-          pwd = $('#password').val();
-          if(user != '' && pdw!= '') {
-            $.post('http://ap-test.d.d.ansta.pl/resp.php', {u:user,p:pwd}, function(res) {
+            $.post('http://ap-test.d.d.ansta.pl/resp.php', {u:'test',p:'test'}, function(res) {
               alert(res);
             });
-          }
-          $('#submitButton').removeAttr('disabled');
         });
       }
     </script>

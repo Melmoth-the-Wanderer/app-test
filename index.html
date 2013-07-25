@@ -15,8 +15,8 @@
       function deviceReady() {
         $('#loginForm').on('submit', function(e) {
           $('#submitButton').attr('disabled','disabled');
-          var user = $('#username').val();
-          var pwd = $('#password').val();
+          user = $('#username').val();
+          pwd = $('#password').val();
           if(user != '' && pdw!= '') {
             $.post('http://ap-test.d.d.ansta.pl/resp.php', {u:user,p:pwd}, function(res) {
               alert(res);

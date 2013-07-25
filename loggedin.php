@@ -1,10 +1,13 @@
-<?php
-  session_start();
+<!DOCTYPE HTML>
+<html>
 
-  if (!session_is_registered(username)) {
-    header("location:resp.php");
-  }
-  else {
-    echo "session-established";
-  }
-?>
+<head>
+    <meta name="viewport" content="width=320; user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Auth Demo</title>
+</head>
+
+<body>
+  HURRA
+</body>
+</html>

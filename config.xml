@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
-	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "com.dexter.apptest"
-	version 	= "1.0.0">
+  xmlns:gap	= "http://phonegap.com/ns/1.0"
+  id = "com.dexter.apptest"
+  version = "1.0.0">
 
   <name>Test+</name>
 
-	<description>
-	  Test APP
-	</description>
+  <description>
+    Test APP
+  </description>
 
-	<author
+  <author>
 	  M P
 	</author>
 

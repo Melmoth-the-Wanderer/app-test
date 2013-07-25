@@ -17,12 +17,9 @@
           var username = $('#username').val();
           var password = $('#password').val();
           $.post('http://ap-test.d.d.ansta.pl/resp.php', {u:username,p:password}, function(res) {
-              if (res == 'DOBRZE.') {
-                session_register("username");
-                session_register("password");
-                header("location:loggedin.php");
+              if (res == 'ŹLE.') {
+                alert('YOU SHALL NOT PASS');
               }
-              else alert('YOU SHALL NOT PASS');
             });
         });
       }

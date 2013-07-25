@@ -14,7 +14,9 @@
       function deviceReady() {
         $('#loginForm').on('submit', function(e) {
           e.preventDefault();
-            $.post('http://ap-test.d.d.ansta.pl/resp.php', {u:'test',p:'test'}, function(res) {
+          var username = $('#username').val();
+          var password = $('#password').val();
+          $.post('http://ap-test.d.d.ansta.pl/resp.php', {u:username,p:password}, function(res) {
               alert(res);
             });
         });

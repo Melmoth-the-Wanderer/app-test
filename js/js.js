@@ -4,7 +4,7 @@ function init() {
 }
 
 function deviceReady() {
-  navigator.notification.alert('ALERT', function() {});
+  alert('ALERT', function() {});
 /*
   $('#loginForm').on('submit', function(e) {
     $('#submitButton',this).attr('disabled','disabled');

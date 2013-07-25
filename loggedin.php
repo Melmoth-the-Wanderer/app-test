@@ -8,9 +8,12 @@
 		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/jquery-1.8.3.js"></script>
     <script>
-      $.post('http://ap-test.d.d.ansta.pl/loggedin.php',{}, function(resp) {
-        $('body').html(resp);
-      });
+      document.addEventListener("deviceready", deviceReady, true);
+      function deviceReady() {
+        $.post('http://ap-test.d.d.ansta.pl/loggedin.php',{}, function(resp) {
+          $('body').html(resp);
+        });
+      }
     </script>
 </head>
 

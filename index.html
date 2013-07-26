@@ -12,7 +12,6 @@
       document.addEventListener("deviceready", deviceReady, true);
 
       function deviceReady() {
-        document.getElementById('info').innerHTML(device.name); 
         $('#loginForm').on('submit', function(e) {
           e.preventDefault();
           var username = $('#username').val();
@@ -56,8 +55,6 @@
         </form>
 
     </div>
-
-    <div id="info"></div>
 
     <div data-role="footer">
         <h4>&copy; Camden Enterprises</h4>

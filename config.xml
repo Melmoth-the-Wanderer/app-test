@@ -23,8 +23,8 @@
 
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
   <feature name="http://api.phonegap.com/1.0/network"/>
+  <feature name="http://api.phonegap.com/1.0/device"/>
 
   <!-- sample preference specification -->
   <!-- <preference name="autorotate" value="false" readonly="true"/> -->
 </widget>
-  <feature name="http://api.phonegap.com/1.0/device"/>

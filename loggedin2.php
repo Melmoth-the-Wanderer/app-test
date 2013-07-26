@@ -11,12 +11,21 @@
       document.addEventListener("deviceready", deviceReady, true);
       function deviceReady() {
         $.post('http://ap-test.d.d.ansta.pl/loggedin.php',{}, function(resp) {
-          $('body').html(resp);
+          document.getElementById('auth').innerHTML = resp;
         });
+
+        document.getElementById('dev-info').innerHTML = 'Device Name: '     + device.name     + '<br />' +
+                            'Device Cordova: '  + device.cordova  + '<br />' +
+                            'Device Platform: ' + device.platform + '<br />' +
+                            'Device UUID: '     + device.uuid     + '<br />' +
+                            'Device Version: '  + device.version  + '<br />';
+
       }
     </script>
 </head>
 
 <body>
+  <div id="#auth"></div>
+  <div id="#dev-info"></div>
 </body>
 </html>

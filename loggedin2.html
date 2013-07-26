@@ -11,15 +11,12 @@
       document.addEventListener("deviceready", deviceReady, true);
       function deviceReady() {
         $.post('http://ap-test.d.d.ansta.pl/loggedin.php',{}, function(resp) {
-          $('#auth').html(resp);
+          $('body').html(resp);
         });
-
       }
     </script>
 </head>
 
 <body>
-  <div id="#auth">REPLACE</div>
-  <div id="#dev-info">ME</div>
 </body>
 </html>

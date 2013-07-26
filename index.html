@@ -32,7 +32,8 @@
         $.post('http://ap-test.d.d.ansta.pl/loggedin.php',{}, function(resp) {
 
           $('#auth').html(resp);
-        });
+
+        },'json');
         document.getElementById('info').innerHTML = 'unique ID: ' +  device.uuid; 
       }
     </script>

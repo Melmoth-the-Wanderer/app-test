@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <div id="#auth"></div>
-  <div id="#dev-info"></div>
+  <div id="#auth">REPLACE</div>
+  <div id="#dev-info">ME</div>
 </body>
 </html>

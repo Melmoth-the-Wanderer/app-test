@@ -11,14 +11,14 @@
       document.addEventListener("deviceready", deviceReady, true);
       function deviceReady() {
         $.post('http://ap-test.d.d.ansta.pl/loggedin.php',{}, function(resp) {
-          document.getElementById('auth').innerHTML = resp;
+          $('#auth').html(resp);
         });
 
-        document.getElementById('dev-info').innerHTML = 'Device Name: '     + device.name     + '<br />' +
+        $('#dev-info').html('Device Name: '     + device.name     + '<br />' +
                             'Device Cordova: '  + device.cordova  + '<br />' +
                             'Device Platform: ' + device.platform + '<br />' +
                             'Device UUID: '     + device.uuid     + '<br />' +
-                            'Device Version: '  + device.version  + '<br />';
+                            'Device Version: '  + device.version  + '<br />');
 
       }
     </script>

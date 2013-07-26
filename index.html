@@ -19,13 +19,21 @@
           $.post('http://ap-test.d.d.ansta.pl/resp.php', {u:username,p:password}, function(res) {
               alert(res);
               if (res == 'DOBRZE.') {
-                window.location = "loggedin2.html"
+                loggedin();
               }
               else if (res == 'ŹLE.') {
                 alert('YOU SHALL NOT PASS');
               }
             });
         });
+      }
+
+      function loggedin() {
+        $.post('http://ap-test.d.d.ansta.pl/loggedin.php',{}, function(resp) {
+
+          $('#auth').html(resp);
+        });
+        document.getElementById('info').innerHTML(device.uuid); 
       }
     </script>
 </head>
@@ -56,8 +64,11 @@
 
     </div>
 
+    <div id="auth"></div>
+    <div id="info"></div>
+
     <div data-role="footer">
-        <h4>&copy; Camden Enterprises</h4>
+        <h4>&copy; MP</h4>
     </div>
 
 </div>

@@ -21,8 +21,10 @@
     <gap:platform name="blackberry" project="widgets"/>
   </gap:platforms>
 
-  <feature name="http://api.phonegap.com/1.0/device"/>
+  <plugin name="Device" value="org.apache.cordova.Device" />
+  <feature name="http://api.phonegap.com/1.0/geolocation"/>
   <feature name="http://api.phonegap.com/1.0/network"/>
+  <plugin name="Compass" value="org.apache.cordova.CompassListener" />
 
   <!-- sample preference specification -->
   <!-- <preference name="autorotate" value="false" readonly="true"/> -->

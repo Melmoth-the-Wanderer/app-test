@@ -31,7 +31,7 @@
       function loggedin() {
         $.post('http://ap-test.d.d.ansta.pl/loggedin.php',{}, function(resp) {
           
-          document.getElementById('auth').innerHTML = resp.ip;
+          document.getElementById('auth').innerHTML = resp.ip + ' ' +  resp.time;
 
         },'json');
         document.getElementById('info').innerHTML = 'unique ID: ' +  device.uuid; 

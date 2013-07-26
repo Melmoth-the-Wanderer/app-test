@@ -14,12 +14,6 @@
           $('#auth').html(resp);
         });
 
-        $('#dev-info').html('Device Name: '     + device.name     + '<br />' +
-                            'Device Cordova: '  + device.cordova  + '<br />' +
-                            'Device Platform: ' + device.platform + '<br />' +
-                            'Device UUID: '     + device.uuid     + '<br />' +
-                            'Device Version: '  + device.version  + '<br />');
-
       }
     </script>
 </head>

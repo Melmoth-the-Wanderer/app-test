@@ -16,7 +16,8 @@
           e.preventDefault();
           var username = $('#username').val();
           var password = $('#password').val();
-          $.get('http://d.ansta.pl:29998/mobile-login/', {username:username,password:password}, function(res) {
+          var csrf = $.cookie('csrftoken');
+          $.post('http://d.ansta.pl:29998/mobile-login/', {username:username,password:password,csrfmiddlewaretoken:csrf}, function(res) {
               alert(res);
               if (res == '1') {
                 loggedin();

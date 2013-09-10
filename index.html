@@ -30,13 +30,13 @@
       }
 
       function loggedin() {
-        $.post('http://d.ansta.pl:29998/mob/',{}, function(resp) {
+        $.get('http://d.ansta.pl:29998/mob/',{}, function(resp) {
           
           document.getElementById('user').innerHTML = resp.user;
 
         },'json');
         document.getElementById('info').innerHTML = 'unique ID: ' +  device.uuid; 
-        document.getElementById('info2').innerHTML = $.cookie('csrftoken'); 
+        document.getElementById('info2').innerHTML = document.cookie
         console.log($.cookie());
       }
     </script>

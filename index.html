@@ -30,7 +30,7 @@
       }
 
       function loggedin() {
-        $.get('http://d.ansta.pl:29998/mob/',{}, function(resp) {
+        $.post('http://d.ansta.pl:29998/mob/',{}, function(resp) {
           
           document.getElementById('user').innerHTML = resp.user;
 
